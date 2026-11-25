@@ -7,7 +7,7 @@
   "scope": "./",
   "display": "standalone",
   "background_color": "#FFFFFF",
-  "theme_color": "#D72638",
+  "theme_color": "#174A78",
   "icons": [
     {
       "src": "./logo-mision-navidad.png",
