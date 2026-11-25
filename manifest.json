@@ -1,0 +1,18 @@
+{
+  "name": "Misión Navidad 2026",
+  "short_name": "Misión Navidad",
+  "description": "Hemos visto salir su estrella · Mateo 2,2",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#D72638",
+  "icons": [
+    {
+      "src": "./logo-mision-navidad.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
