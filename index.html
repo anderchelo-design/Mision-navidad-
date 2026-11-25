@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,9 +8,11 @@
 <title>Misión Navidad 2026</title>
 <link rel="manifest" href="./manifest.json">
 <meta name="theme-color" content="#174A78">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 :root {
   --blue: #123d70;
@@ -20,9 +23,7 @@
   --text: #24364b;
   --muted: #778397;
 }
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 body {
   margin: 0;
   background: var(--cream);
@@ -30,262 +31,226 @@ body {
   font-family: 'Fredoka', sans-serif;
 }
 header {
-  background: linear-gradient(135deg, #10345f, #205a91);
+  background: linear-gradient(135deg,#10345f,#205a91);
   color: white;
   padding: 25px 18px 28px;
   border-radius: 0 0 25px 25px;
   box-shadow: 0 5px 18px #102e5020;
 }
-.header-content {
-  max-width: 800px;
-  margin: auto;
-}
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+.header-content { max-width: 800px; margin: auto; }
+.brand { display:flex; align-items:center; gap:15px; }
 .logo {
-  width: 105px;
-  height: 76px;
-  object-fit: contain;
-  border-radius: 12px;
+  width:105px;
+  height:76px;
+  object-fit:contain;
+  border-radius:12px;
 }
 .brand h1 {
-  margin: 0;
-  font-size: clamp(22px, 5vw, 34px);
-  font-weight: 700;
-  line-height: 1.1;
+  margin:0;
+  font-size:clamp(22px,5vw,34px);
+  font-weight:700;
+  line-height:1.1;
 }
-.brand h1 span {
-  color: #f2c75e;
-}
+.brand h1 span { color:#f2c75e; }
 .motto {
-  font-family: 'Caveat', cursive;
-  font-size: clamp(25px, 5vw, 34px);
-  font-weight: 700;
-  color: #ffe3a0;
-  margin: 22px 0 0;
-  text-align: center;
+  font-family:'Caveat',cursive;
+  font-size:clamp(25px,5vw,34px);
+  font-weight:700;
+  color:#ffe3a0;
+  margin:22px 0 0;
+  text-align:center;
 }
 .bible {
-  text-align: center;
-  font-size: 13px;
-  margin: 4px 0 0;
-  color: #e6edf6;
+  text-align:center;
+  font-size:13px;
+  margin:4px 0 0;
+  color:#e6edf6;
 }
 main {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px 15px 45px;
+  max-width:800px;
+  margin:auto;
+  padding:20px 15px 45px;
 }
 .search {
-  width: 100%;
-  border: 1px solid #e4e0d6;
-  background: white;
-  padding: 15px 18px;
-  border-radius: 14px;
-  font-family: inherit;
-  font-size: 16px;
-  outline: none;
-  margin-bottom: 18px;
+  width:100%;
+  border:1px solid #e4e0d6;
+  background:white;
+  padding:15px 18px;
+  border-radius:14px;
+  font-family:inherit;
+  font-size:16px;
+  outline:none;
+  margin-bottom:18px;
 }
-.search:focus {
-  border-color: var(--gold);
-}
+.search:focus { border-color:var(--gold); }
 .tabs {
-  display: flex;
-  gap: 8px;
-  overflow-x: auto;
-  padding-bottom: 12px;
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding-bottom:12px;
 }
 .tab {
-  border: 1px solid #e8e1d2;
-  background: white;
-  color: var(--blue);
-  padding: 10px 15px;
-  border-radius: 22px;
-  font-family: inherit;
-  font-weight: 600;
-  white-space: nowrap;
-  cursor: pointer;
+  border:1px solid #e8e1d2;
+  background:white;
+  color:var(--blue);
+  padding:10px 15px;
+  border-radius:22px;
+  font-family:inherit;
+  font-weight:600;
+  white-space:nowrap;
+  cursor:pointer;
 }
 .tab.active {
-  background: var(--blue);
-  color: white;
-  border-color: var(--blue);
+  background:var(--blue);
+  color:white;
+  border-color:var(--blue);
 }
 .section-title {
-  font-size: 21px;
-  margin: 17px 0;
-  color: var(--blue);
+  font-size:21px;
+  margin:17px 0;
+  color:var(--blue);
 }
 .song {
-  background: white;
-  border-radius: 15px;
-  padding: 17px;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  box-shadow: 0 3px 12px #00000008;
+  background:white;
+  border-radius:15px;
+  padding:17px;
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  gap:13px;
+  box-shadow:0 3px 12px #00000008;
 }
 .music-icon {
-  background: #f5edda;
-  color: #b18a32;
-  width: 45px;
-  height: 45px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  font-size: 21px;
-  flex-shrink: 0;
+  background:#f5edda;
+  color:#b18a32;
+  width:45px;
+  height:45px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  font-size:21px;
+  flex-shrink:0;
 }
-.song-info {
-  flex: 1;
-  min-width: 0;
-  cursor: pointer;
-}
-.song-info h3 {
-  margin: 0 0 5px;
-  font-size: 17px;
-}
-.song-info p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
-}
+.song-info { flex:1; min-width:0; cursor:pointer; }
+.song-info h3 { margin:0 0 5px; font-size:17px; }
+.song-info p { margin:0; color:var(--muted); font-size:13px; }
 .heart {
-  border: none;
-  background: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #b5b5b5;
+  border:none;
+  background:none;
+  font-size:24px;
+  cursor:pointer;
+  color:#b5b5b5;
 }
-.heart.favorite {
-  color: #e34c65;
-}
+.heart.favorite { color:#e34c65; }
 .empty {
-  text-align: center;
-  padding: 35px 10px;
-  color: var(--muted);
+  text-align:center;
+  padding:35px 10px;
+  color:var(--muted);
 }
-button {
-  font-family: inherit;
-}
+button { font-family:inherit; }
 .admin-button {
-  background: #f0c766;
-  color: #17385d;
-  border: none;
-  border-radius: 20px;
-  padding: 9px 14px;
-  font-weight: 700;
-  cursor: pointer;
-  margin-top: 20px;
+  background:#f0c766;
+  color:#17385d;
+  border:none;
+  border-radius:20px;
+  padding:9px 14px;
+  font-weight:700;
+  cursor:pointer;
+  margin-top:20px;
 }
 .admin-area {
-  background: white;
-  border-radius: 16px;
-  padding: 18px;
-  margin-top: 20px;
-  display: none;
-  border: 1px solid #eee5d3;
+  background:white;
+  border-radius:16px;
+  padding:18px;
+  margin-top:20px;
+  display:none;
+  border:1px solid #eee5d3;
 }
-.admin-area h2 {
-  color: var(--blue);
-}
+.admin-area h2 { color:var(--blue); }
 .field {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  margin: 7px 0 13px;
-  font-family: inherit;
-  font-size: 15px;
+  width:100%;
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:10px;
+  margin:7px 0 13px;
+  font-family:inherit;
+  font-size:15px;
 }
-textarea.field {
-  min-height: 180px;
-  resize: vertical;
-}
+textarea.field { min-height:180px; resize:vertical; }
 .primary {
-  background: var(--blue);
-  color: white;
-  border: none;
-  padding: 12px 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 600;
+  background:var(--blue);
+  color:white;
+  border:none;
+  padding:12px 18px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
 }
 .secondary {
-  background: #eee;
-  color: #333;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 10px;
-  cursor: pointer;
+  background:#eee;
+  color:#333;
+  border:none;
+  padding:10px 14px;
+  border-radius:10px;
+  cursor:pointer;
 }
 .danger {
-  background: #fce5e5;
-  color: #ad3030;
-  border: none;
-  padding: 9px 12px;
-  border-radius: 9px;
-  cursor: pointer;
+  background:#fce5e5;
+  color:#ad3030;
+  border:none;
+  padding:9px 12px;
+  border-radius:9px;
+  cursor:pointer;
 }
 .admin-song {
-  border-top: 1px solid #eee;
-  padding: 12px 0;
+  border-top:1px solid #eee;
+  padding:12px 0;
 }
-.admin-song button {
-  margin: 5px 4px 0 0;
-}
+.admin-song button { margin:5px 4px 0 0; }
 .detail {
-  display: none;
-  background: white;
-  border-radius: 18px;
-  padding: 23px;
-  margin-top: 18px;
-  box-shadow: 0 3px 15px #0000000a;
+  display:none;
+  background:white;
+  border-radius:18px;
+  padding:23px;
+  margin-top:18px;
+  box-shadow:0 3px 15px #0000000a;
 }
-.detail h2 {
-  color: var(--blue);
-  font-size: 25px;
-}
-.detail-category {
-  color: #ae842e;
-  font-weight: 600;
-}
+.detail h2 { color:var(--blue); font-size:25px; }
+.detail-category { color:#ae842e; font-weight:600; }
 .lyrics {
-  white-space: pre-wrap;
-  line-height: 1.9;
-  font-size: 17px;
-  margin: 25px 0;
+  white-space:pre-wrap;
+  line-height:1.9;
+  font-size:17px;
+  margin:25px 0;
 }
 .back {
-  background: #edf1f5;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 9px;
-  cursor: pointer;
+  background:#edf1f5;
+  border:none;
+  padding:10px 15px;
+  border-radius:9px;
+  cursor:pointer;
 }
 footer {
-  text-align: center;
-  color: #929292;
-  font-size: 12px;
-  padding: 25px;
+  text-align:center;
+  color:#929292;
+  font-size:12px;
+  padding:25px;
 }
-@media(max-width: 450px) {
-  .logo {
-    width: 62px;
-    height: 62px;
-  }
-  .brand {
-    gap: 10px;
-  }
+.connection {
+  font-size:12px;
+  text-align:center;
+  color:var(--muted);
+  margin:5px 0 15px;
+}
+@media(max-width:450px) {
+  .logo { width:62px; height:62px; }
+  .brand { gap:10px; }
 }
 </style>
 </head>
+
 <body>
+
 <header>
   <div class="header-content">
     <div class="brand">
@@ -299,7 +264,9 @@ footer {
     <p class="bible">(Mateo 2,2)</p>
   </div>
 </header>
+
 <main>
+
   <div id="library">
     <input
       type="search"
@@ -307,6 +274,7 @@ footer {
       id="search"
       placeholder="🔍 Buscar una canción..."
       oninput="renderSongs()">
+
     <div class="tabs">
       <button class="tab active" onclick="setTab('Todos',this)">Todos</button>
       <button class="tab" onclick="setTab('Favoritos',this)">♡ Favoritos</button>
@@ -314,83 +282,103 @@ footer {
       <button class="tab" onclick="setTab('Animación',this)">Animación</button>
       <button class="tab" onclick="setTab('Celebración',this)">Celebración</button>
     </div>
+
     <h2 class="section-title" id="sectionTitle">Todas las canciones</h2>
+    <p class="connection" id="connectionStatus">Conectando con la biblioteca...</p>
     <div id="songList"></div>
   </div>
+
   <div class="detail" id="detail">
     <button class="back" onclick="closeSong()">← Volver</button>
     <h2 id="detailTitle"></h2>
     <p class="detail-category" id="detailCategory"></p>
     <div class="lyrics" id="detailLyrics"></div>
+
     <button class="primary" onclick="toggleCurrentFavorite()">
       ♡ Agregar a favoritos
     </button>
   </div>
+
   <div style="text-align:center">
     <button class="admin-button" onclick="adminAccess()">
       🔐 Administrador
     </button>
   </div>
+
   <section class="admin-area" id="adminArea">
     <h2>Panel de administrador</h2>
-    <p>Agrega, modifica o elimina tus canciones.</p>
+    <p>Agrega, modifica o elimina tus canciones locales.</p>
+    <p><small>Las canciones que agregues aquí se guardan únicamente en este navegador.</small></p>
+
     <form id="songForm">
       <label>Título de la canción</label>
       <input class="field" id="songTitle" required
              placeholder="Nombre de la canción">
+
       <label>Categoría</label>
       <select class="field" id="songCategory">
         <option>Adoración</option>
         <option>Animación</option>
         <option>Celebración</option>
       </select>
+
       <label>Letra completa</label>
       <textarea class="field" id="songLyrics" required
                 placeholder="Escribe aquí la letra..."></textarea>
+
       <button class="primary" type="submit" id="saveButton">
         Guardar canción
       </button>
+
       <button class="secondary" type="button" onclick="resetForm()">
         Cancelar
       </button>
     </form>
+
     <h3>Mis canciones</h3>
     <div id="adminSongList"></div>
+
     <button class="danger" onclick="logout()">
       Cerrar sesión
     </button>
   </section>
+
 </main>
+
 <footer>
   MISIÓN NAVIDAD 2026 · Hemos visto salir su estrella ⭐
 </footer>
+
 <script>
-// CAMBIA ESTA CLAVE POR UNA CONTRASEÑA PROPIA.
-// IMPORTANTE: esta clave no protege realmente una web pública.
 const ADMIN_PASSWORD = "Admi1509";
 
-let songs = JSON.parse(
+let songs = [];
+let localSongs = JSON.parse(
   localStorage.getItem("mision_songs") || "[]"
 );
 let favorites = JSON.parse(
   localStorage.getItem("mision_favorites") || "[]"
 );
+
 let currentTab = "Todos";
 let editingId = null;
 let currentSongId = null;
 let isAdmin = false;
 
-function saveData() {
-  localStorage.setItem("mision_songs", JSON.stringify(songs));
+function saveLocalData() {
+  localStorage.setItem("mision_songs", JSON.stringify(localSongs));
   localStorage.setItem("mision_favorites", JSON.stringify(favorites));
 }
 
 function setTab(category, button) {
   currentTab = category;
+
   document.querySelectorAll(".tab").forEach(tab => {
     tab.classList.remove("active");
   });
+
   button.classList.add("active");
+
   const titles = {
     "Todos": "Todas las canciones",
     "Favoritos": "Mis canciones favoritas",
@@ -398,26 +386,30 @@ function setTab(category, button) {
     "Animación": "Canciones de animación",
     "Celebración": "Canciones de celebración"
   };
-  document.getElementById("sectionTitle").textContent =
-    titles[category];
+
+  document.getElementById("sectionTitle").textContent = titles[category];
   renderSongs();
 }
 
 function renderSongs() {
-  const query = document.getElementById("search")
-    .value.toLowerCase().trim();
+  const query = document.getElementById("search").value.toLowerCase().trim();
   const list = document.getElementById("songList");
+
   list.innerHTML = "";
+
   const filtered = songs.filter(song => {
     const matchesCategory =
       currentTab === "Todos" ||
       (currentTab === "Favoritos"
-        ? favorites.includes(song.id)
+        ? favorites.includes(String(song.id))
         : song.category === currentTab);
+
     const matchesSearch =
       song.title.toLowerCase().includes(query);
+
     return matchesCategory && matchesSearch;
   });
+
   if (filtered.length === 0) {
     list.innerHTML = `
       <div class="empty">
@@ -427,50 +419,70 @@ function renderSongs() {
     `;
     return;
   }
+
   filtered.forEach(song => {
-    const isFavorite = favorites.includes(song.id);
+    const isFavorite = favorites.includes(String(song.id));
+
     const item = document.createElement("div");
     item.className = "song";
+
     const icon = document.createElement("div");
     icon.className = "music-icon";
     icon.textContent = "♫";
+
     const info = document.createElement("div");
     info.className = "song-info";
     info.onclick = () => openSong(song.id);
+
     const title = document.createElement("h3");
     title.textContent = song.title;
+
     const category = document.createElement("p");
     category.textContent = song.category;
+
     info.append(title, category);
+
     const heart = document.createElement("button");
     heart.className = "heart" + (isFavorite ? " favorite" : "");
     heart.textContent = isFavorite ? "♥" : "♡";
     heart.setAttribute("aria-label", "Cambiar favorito");
     heart.onclick = () => toggleFavorite(song.id);
+
     item.append(icon, info, heart);
     list.appendChild(item);
   });
 }
 
 function toggleFavorite(id) {
+  id = String(id);
+
   if (favorites.includes(id)) {
     favorites = favorites.filter(item => item !== id);
   } else {
     favorites.push(id);
   }
-  saveData();
+
+  saveLocalData();
   renderSongs();
+
+  if (currentSongId !== null) {
+    updateDetailFavorite();
+  }
 }
 
 function openSong(id) {
-  const song = songs.find(item => item.id === id);
+  const song = songs.find(item => String(item.id) === String(id));
   if (!song) return;
-  currentSongId = id;
+
+  currentSongId = String(id);
+
   document.getElementById("library").style.display = "none";
   document.getElementById("detail").style.display = "block";
+
   document.getElementById("detailTitle").textContent = song.title;
   document.getElementById("detailCategory").textContent = song.category;
   document.getElementById("detailLyrics").textContent = song.lyrics;
+
   updateDetailFavorite();
 }
 
@@ -483,7 +495,8 @@ function closeSong() {
 
 function updateDetailFavorite() {
   const button = document.querySelector("#detail .primary");
-  const active = favorites.includes(currentSongId);
+  const active = favorites.includes(String(currentSongId));
+
   button.textContent = active
     ? "♥ Quitar de favoritos"
     : "♡ Agregar a favoritos";
@@ -492,7 +505,6 @@ function updateDetailFavorite() {
 function toggleCurrentFavorite() {
   if (currentSongId === null) return;
   toggleFavorite(currentSongId);
-  updateDetailFavorite();
 }
 
 function adminAccess() {
@@ -500,8 +512,10 @@ function adminAccess() {
     document.getElementById("adminArea").style.display = "block";
     return;
   }
+
   const password = prompt("Ingresa la contraseña de administrador:");
   if (password === null) return;
+
   if (password === ADMIN_PASSWORD) {
     isAdmin = true;
     document.getElementById("adminArea").style.display = "block";
@@ -514,49 +528,69 @@ function adminAccess() {
 
 document.getElementById("songForm").addEventListener("submit", function(event) {
   event.preventDefault();
+
   if (!isAdmin) return;
+
   const title = document.getElementById("songTitle").value.trim();
   const category = document.getElementById("songCategory").value;
   const lyrics = document.getElementById("songLyrics").value.trim();
+
   if (!title || !lyrics) {
     alert("Completa el título y la letra.");
     return;
   }
+
   if (editingId !== null) {
-    const index = songs.findIndex(song => song.id === editingId);
+    const index = localSongs.findIndex(
+      song => String(song.id) === String(editingId)
+    );
+
     if (index !== -1) {
-      songs[index] = {
-        ...songs[index],
+      localSongs[index] = {
+        ...localSongs[index],
         title,
         category,
         lyrics
       };
     }
   } else {
-    songs.push({
-      id: Date.now(),
+    localSongs.push({
+      id: "local_" + Date.now(),
       title,
       category,
       lyrics
     });
   }
-  saveData();
+
+  refreshCombinedSongs();
+  saveLocalData();
   resetForm();
   renderSongs();
   renderAdminSongs();
-  alert("Canción guardada correctamente.");
+
+  alert("Canción guardada en este dispositivo.");
 });
 
 function editSong(id) {
   if (!isAdmin) return;
-  const song = songs.find(item => item.id === id);
-  if (!song) return;
+
+  const song = localSongs.find(
+    item => String(item.id) === String(id)
+  );
+
+  if (!song) {
+    alert("Las canciones de Firebase no se editan desde este panel.");
+    return;
+  }
+
   editingId = id;
+
   document.getElementById("songTitle").value = song.title;
   document.getElementById("songCategory").value = song.category;
   document.getElementById("songLyrics").value = song.lyrics;
-  document.getElementById("saveButton").textContent =
-    "Actualizar canción";
+
+  document.getElementById("saveButton").textContent = "Actualizar canción";
+
   document.getElementById("songTitle").scrollIntoView({
     behavior: "smooth",
     block: "center"
@@ -565,10 +599,26 @@ function editSong(id) {
 
 function deleteSong(id) {
   if (!isAdmin) return;
+
+  const song = localSongs.find(
+    item => String(item.id) === String(id)
+  );
+
+  if (!song) {
+    alert("Las canciones de Firebase no se eliminan desde este panel.");
+    return;
+  }
+
   if (!confirm("¿Seguro que deseas eliminar esta canción?")) return;
-  songs = songs.filter(song => song.id !== id);
-  favorites = favorites.filter(item => item !== id);
-  saveData();
+
+  localSongs = localSongs.filter(
+    item => String(item.id) !== String(id)
+  );
+
+  favorites = favorites.filter(item => item !== String(id));
+
+  refreshCombinedSongs();
+  saveLocalData();
   renderSongs();
   renderAdminSongs();
   resetForm();
@@ -576,27 +626,35 @@ function deleteSong(id) {
 
 function renderAdminSongs() {
   if (!isAdmin) return;
+
   const list = document.getElementById("adminSongList");
   list.innerHTML = "";
-  if (songs.length === 0) {
-    list.textContent = "Todavía no has agregado canciones.";
+
+  if (localSongs.length === 0) {
+    list.textContent = "Todavía no has agregado canciones locales.";
     return;
   }
-  songs.forEach(song => {
+
+  localSongs.forEach(song => {
     const item = document.createElement("div");
     item.className = "admin-song";
+
     const name = document.createElement("strong");
     name.textContent = song.title;
+
     const category = document.createElement("p");
     category.textContent = song.category;
+
     const edit = document.createElement("button");
     edit.className = "secondary";
     edit.textContent = "✏️ Editar";
     edit.onclick = () => editSong(song.id);
+
     const remove = document.createElement("button");
     remove.className = "danger";
     remove.textContent = "🗑 Eliminar";
     remove.onclick = () => deleteSong(song.id);
+
     item.append(name, category, edit, remove);
     list.appendChild(item);
   });
@@ -605,8 +663,7 @@ function renderAdminSongs() {
 function resetForm() {
   editingId = null;
   document.getElementById("songForm").reset();
-  document.getElementById("saveButton").textContent =
-    "Guardar canción";
+  document.getElementById("saveButton").textContent = "Guardar canción";
 }
 
 function logout() {
@@ -616,7 +673,73 @@ function logout() {
   alert("Sesión de administrador cerrada.");
 }
 
+function refreshCombinedSongs() {
+  songs = [...firebaseSongs, ...localSongs];
+}
+
+let firebaseSongs = [];
+
 renderSongs();
+</script>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-app.js";
+
+import {
+  getFirestore,
+  collection,
+  getDocs
+} from "https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCKbh31pKrH-Nb34rVaDgRpt2d1EFSaRyQ",
+  authDomain: "mision-navidad-2026.firebaseapp.com",
+  projectId: "mision-navidad-2026",
+  storageBucket: "mision-navidad-2026.firebasestorage.app",
+  messagingSenderId: "77849011852",
+  appId: "1:77849011852:web:c91c796b9794583ffd3da9"
+};
+
+async function cargarFirebase() {
+  const status = document.getElementById("connectionStatus");
+
+  try {
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const consulta = await getDocs(collection(db, "canciones"));
+
+    firebaseSongs = consulta.docs.map(doc => {
+      const data = doc.data();
+
+      return {
+        id: "firebase_" + doc.id,
+        title: data.titulo || "Sin título",
+        lyrics: data.letra || "",
+        category: data.categoria || "Animación",
+        author: data.autor || "",
+        source: "firebase"
+      };
+    });
+
+    refreshCombinedSongs();
+    renderSongs();
+
+    status.textContent =
+      "☁️ Conectado · " + firebaseSongs.length + " canciones en la nube";
+
+  } catch (error) {
+    console.error("Firebase:", error);
+
+    status.textContent =
+      "⚠️ No se pudo conectar con Firebase.";
+
+    refreshCombinedSongs();
+    renderSongs();
+  }
+}
+
+cargarFirebase();
 </script>
 
 <script>
@@ -627,5 +750,6 @@ if ("serviceWorker" in navigator) {
   });
 }
 </script>
+
 </body>
 </html>
