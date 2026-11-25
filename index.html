@@ -5,11 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Misión Navidad 2026</title>
-
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#D72638">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 :root {
   --blue: #123d70;
@@ -20,18 +20,15 @@
   --text: #24364b;
   --muted: #778397;
 }
-
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   background: var(--cream);
   color: var(--text);
   font-family: 'Fredoka', sans-serif;
 }
-
 header {
   background: linear-gradient(135deg, #10345f, #205a91);
   color: white;
@@ -39,36 +36,30 @@ header {
   border-radius: 0 0 25px 25px;
   box-shadow: 0 5px 18px #102e5020;
 }
-
 .header-content {
   max-width: 800px;
   margin: auto;
 }
-
 .brand {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
 .logo {
   width: 76px;
   height: 76px;
   object-fit: contain;
   border-radius: 12px;
 }
-
 .brand h1 {
   margin: 0;
   font-size: clamp(22px, 5vw, 34px);
   font-weight: 700;
   line-height: 1.1;
 }
-
 .brand h1 span {
   color: #f2c75e;
 }
-
 .motto {
   font-family: 'Caveat', cursive;
   font-size: clamp(25px, 5vw, 34px);
@@ -77,20 +68,17 @@ header {
   margin: 22px 0 0;
   text-align: center;
 }
-
 .bible {
   text-align: center;
   font-size: 13px;
   margin: 4px 0 0;
   color: #e6edf6;
 }
-
 main {
   max-width: 800px;
   margin: auto;
   padding: 20px 15px 45px;
 }
-
 .search {
   width: 100%;
   border: 1px solid #e4e0d6;
@@ -102,18 +90,15 @@ main {
   outline: none;
   margin-bottom: 18px;
 }
-
 .search:focus {
   border-color: var(--gold);
 }
-
 .tabs {
   display: flex;
   gap: 8px;
   overflow-x: auto;
   padding-bottom: 12px;
 }
-
 .tab {
   border: 1px solid #e8e1d2;
   background: white;
@@ -125,19 +110,16 @@ main {
   white-space: nowrap;
   cursor: pointer;
 }
-
 .tab.active {
   background: var(--blue);
   color: white;
   border-color: var(--blue);
 }
-
 .section-title {
   font-size: 21px;
   margin: 17px 0;
   color: var(--blue);
 }
-
 .song {
   background: white;
   border-radius: 15px;
@@ -148,7 +130,6 @@ main {
   gap: 13px;
   box-shadow: 0 3px 12px #00000008;
 }
-
 .music-icon {
   background: #f5edda;
   color: #b18a32;
@@ -160,24 +141,20 @@ main {
   font-size: 21px;
   flex-shrink: 0;
 }
-
 .song-info {
   flex: 1;
   min-width: 0;
   cursor: pointer;
 }
-
 .song-info h3 {
   margin: 0 0 5px;
   font-size: 17px;
 }
-
 .song-info p {
   margin: 0;
   color: var(--muted);
   font-size: 13px;
 }
-
 .heart {
   border: none;
   background: none;
@@ -185,21 +162,17 @@ main {
   cursor: pointer;
   color: #b5b5b5;
 }
-
 .heart.favorite {
   color: #e34c65;
 }
-
 .empty {
   text-align: center;
   padding: 35px 10px;
   color: var(--muted);
 }
-
 button {
   font-family: inherit;
 }
-
 .admin-button {
   background: #f0c766;
   color: #17385d;
@@ -210,7 +183,6 @@ button {
   cursor: pointer;
   margin-top: 20px;
 }
-
 .admin-area {
   background: white;
   border-radius: 16px;
@@ -219,11 +191,9 @@ button {
   display: none;
   border: 1px solid #eee5d3;
 }
-
 .admin-area h2 {
   color: var(--blue);
 }
-
 .field {
   width: 100%;
   padding: 12px;
@@ -233,12 +203,10 @@ button {
   font-family: inherit;
   font-size: 15px;
 }
-
 textarea.field {
   min-height: 180px;
   resize: vertical;
 }
-
 .primary {
   background: var(--blue);
   color: white;
@@ -248,7 +216,6 @@ textarea.field {
   cursor: pointer;
   font-weight: 600;
 }
-
 .secondary {
   background: #eee;
   color: #333;
@@ -257,7 +224,6 @@ textarea.field {
   border-radius: 10px;
   cursor: pointer;
 }
-
 .danger {
   background: #fce5e5;
   color: #ad3030;
@@ -266,16 +232,13 @@ textarea.field {
   border-radius: 9px;
   cursor: pointer;
 }
-
 .admin-song {
   border-top: 1px solid #eee;
   padding: 12px 0;
 }
-
 .admin-song button {
   margin: 5px 4px 0 0;
 }
-
 .detail {
   display: none;
   background: white;
@@ -284,24 +247,20 @@ textarea.field {
   margin-top: 18px;
   box-shadow: 0 3px 15px #0000000a;
 }
-
 .detail h2 {
   color: var(--blue);
   font-size: 25px;
 }
-
 .detail-category {
   color: #ae842e;
   font-weight: 600;
 }
-
 .lyrics {
   white-space: pre-wrap;
   line-height: 1.9;
   font-size: 17px;
   margin: 25px 0;
 }
-
 .back {
   background: #edf1f5;
   border: none;
@@ -309,14 +268,12 @@ textarea.field {
   border-radius: 9px;
   cursor: pointer;
 }
-
 footer {
   text-align: center;
   color: #929292;
   font-size: 12px;
   padding: 25px;
 }
-
 @media(max-width: 450px) {
   .logo {
     width: 62px;
@@ -328,10 +285,7 @@ footer {
 }
 </style>
 </head>
-  <link rel="manifest" href="./manifest.json">
-
 <body>
-
 <header>
   <div class="header-content">
     <div class="brand">
@@ -339,17 +293,13 @@ footer {
            alt="Logo Misión Navidad"
            class="logo"
            onerror="this.style.visibility='hidden'">
-
       <h1>MISIÓN NAVIDAD <span>2026</span></h1>
     </div>
-
     <p class="motto">Hemos visto salir su estrella</p>
     <p class="bible">Mateo 2,2</p>
   </div>
 </header>
-
 <main>
-
   <div id="library">
     <input
       type="search"
@@ -357,7 +307,6 @@ footer {
       id="search"
       placeholder="🔍 Buscar una canción..."
       oninput="renderSongs()">
-
     <div class="tabs">
       <button class="tab active" onclick="setTab('Todos',this)">Todos</button>
       <button class="tab" onclick="setTab('Favoritos',this)">♡ Favoritos</button>
@@ -365,12 +314,9 @@ footer {
       <button class="tab" onclick="setTab('Animación',this)">Animación</button>
       <button class="tab" onclick="setTab('Celebración',this)">Celebración</button>
     </div>
-
     <h2 class="section-title" id="sectionTitle">Todas las canciones</h2>
-
     <div id="songList"></div>
   </div>
-
   <div class="detail" id="detail">
     <button class="back" onclick="closeSong()">← Volver</button>
     <h2 id="detailTitle"></h2>
@@ -380,71 +326,55 @@ footer {
       ♡ Agregar a favoritos
     </button>
   </div>
-
   <div style="text-align:center">
     <button class="admin-button" onclick="adminAccess()">
       🔐 Administrador
     </button>
   </div>
-
   <section class="admin-area" id="adminArea">
     <h2>Panel de administrador</h2>
     <p>Agrega, modifica o elimina tus canciones.</p>
-
     <form id="songForm">
       <label>Título de la canción</label>
       <input class="field" id="songTitle" required
              placeholder="Nombre de la canción">
-
       <label>Categoría</label>
       <select class="field" id="songCategory">
         <option>Adoración</option>
         <option>Animación</option>
         <option>Celebración</option>
       </select>
-
       <label>Letra completa</label>
       <textarea class="field" id="songLyrics" required
                 placeholder="Escribe aquí la letra..."></textarea>
-
       <button class="primary" type="submit" id="saveButton">
         Guardar canción
       </button>
-
       <button class="secondary" type="button" onclick="resetForm()">
         Cancelar
       </button>
     </form>
-
     <h3>Mis canciones</h3>
     <div id="adminSongList"></div>
-
     <button class="danger" onclick="logout()">
       Cerrar sesión
     </button>
   </section>
-
 </main>
-
 <footer>
   MISIÓN NAVIDAD 2026 · Hemos visto salir su estrella ⭐
 </footer>
-
 <script>
-
 // CAMBIA ESTA CLAVE POR UNA CONTRASEÑA PROPIA.
 // IMPORTANTE: esta clave no protege realmente una web pública.
 const ADMIN_PASSWORD = "CAMBIA-ESTA-CLAVE";
 
-// Aquí se almacenan las canciones.
 let songs = JSON.parse(
   localStorage.getItem("mision_songs") || "[]"
 );
-
 let favorites = JSON.parse(
   localStorage.getItem("mision_favorites") || "[]"
 );
-
 let currentTab = "Todos";
 let editingId = null;
 let currentSongId = null;
@@ -457,13 +387,10 @@ function saveData() {
 
 function setTab(category, button) {
   currentTab = category;
-
   document.querySelectorAll(".tab").forEach(tab => {
     tab.classList.remove("active");
   });
-
   button.classList.add("active");
-
   const titles = {
     "Todos": "Todas las canciones",
     "Favoritos": "Mis canciones favoritas",
@@ -471,33 +398,26 @@ function setTab(category, button) {
     "Animación": "Canciones de animación",
     "Celebración": "Canciones de celebración"
   };
-
   document.getElementById("sectionTitle").textContent =
     titles[category];
-
   renderSongs();
 }
 
 function renderSongs() {
   const query = document.getElementById("search")
     .value.toLowerCase().trim();
-
   const list = document.getElementById("songList");
   list.innerHTML = "";
-
   const filtered = songs.filter(song => {
     const matchesCategory =
       currentTab === "Todos" ||
       (currentTab === "Favoritos"
         ? favorites.includes(song.id)
         : song.category === currentTab);
-
     const matchesSearch =
       song.title.toLowerCase().includes(query);
-
     return matchesCategory && matchesSearch;
   });
-
   if (filtered.length === 0) {
     list.innerHTML = `
       <div class="empty">
@@ -507,35 +427,26 @@ function renderSongs() {
     `;
     return;
   }
-
   filtered.forEach(song => {
     const isFavorite = favorites.includes(song.id);
-
     const item = document.createElement("div");
     item.className = "song";
-
     const icon = document.createElement("div");
     icon.className = "music-icon";
     icon.textContent = "♫";
-
     const info = document.createElement("div");
     info.className = "song-info";
     info.onclick = () => openSong(song.id);
-
     const title = document.createElement("h3");
     title.textContent = song.title;
-
     const category = document.createElement("p");
     category.textContent = song.category;
-
     info.append(title, category);
-
     const heart = document.createElement("button");
     heart.className = "heart" + (isFavorite ? " favorite" : "");
     heart.textContent = isFavorite ? "♥" : "♡";
     heart.setAttribute("aria-label", "Cambiar favorito");
     heart.onclick = () => toggleFavorite(song.id);
-
     item.append(icon, info, heart);
     list.appendChild(item);
   });
@@ -547,7 +458,6 @@ function toggleFavorite(id) {
   } else {
     favorites.push(id);
   }
-
   saveData();
   renderSongs();
 }
@@ -555,16 +465,12 @@ function toggleFavorite(id) {
 function openSong(id) {
   const song = songs.find(item => item.id === id);
   if (!song) return;
-
   currentSongId = id;
-
   document.getElementById("library").style.display = "none";
   document.getElementById("detail").style.display = "block";
-
   document.getElementById("detailTitle").textContent = song.title;
   document.getElementById("detailCategory").textContent = song.category;
   document.getElementById("detailLyrics").textContent = song.lyrics;
-
   updateDetailFavorite();
 }
 
@@ -578,7 +484,6 @@ function closeSong() {
 function updateDetailFavorite() {
   const button = document.querySelector("#detail .primary");
   const active = favorites.includes(currentSongId);
-
   button.textContent = active
     ? "♥ Quitar de favoritos"
     : "♡ Agregar a favoritos";
@@ -586,7 +491,6 @@ function updateDetailFavorite() {
 
 function toggleCurrentFavorite() {
   if (currentSongId === null) return;
-
   toggleFavorite(currentSongId);
   updateDetailFavorite();
 }
@@ -596,11 +500,8 @@ function adminAccess() {
     document.getElementById("adminArea").style.display = "block";
     return;
   }
-
   const password = prompt("Ingresa la contraseña de administrador:");
-
   if (password === null) return;
-
   if (password === ADMIN_PASSWORD) {
     isAdmin = true;
     document.getElementById("adminArea").style.display = "block";
@@ -613,21 +514,16 @@ function adminAccess() {
 
 document.getElementById("songForm").addEventListener("submit", function(event) {
   event.preventDefault();
-
   if (!isAdmin) return;
-
   const title = document.getElementById("songTitle").value.trim();
   const category = document.getElementById("songCategory").value;
   const lyrics = document.getElementById("songLyrics").value.trim();
-
   if (!title || !lyrics) {
     alert("Completa el título y la letra.");
     return;
   }
-
   if (editingId !== null) {
     const index = songs.findIndex(song => song.id === editingId);
-
     if (index !== -1) {
       songs[index] = {
         ...songs[index],
@@ -644,30 +540,23 @@ document.getElementById("songForm").addEventListener("submit", function(event) {
       lyrics
     });
   }
-
   saveData();
   resetForm();
   renderSongs();
   renderAdminSongs();
-
   alert("Canción guardada correctamente.");
 });
 
 function editSong(id) {
   if (!isAdmin) return;
-
   const song = songs.find(item => item.id === id);
   if (!song) return;
-
   editingId = id;
-
   document.getElementById("songTitle").value = song.title;
   document.getElementById("songCategory").value = song.category;
   document.getElementById("songLyrics").value = song.lyrics;
-
   document.getElementById("saveButton").textContent =
     "Actualizar canción";
-
   document.getElementById("songTitle").scrollIntoView({
     behavior: "smooth",
     block: "center"
@@ -676,12 +565,9 @@ function editSong(id) {
 
 function deleteSong(id) {
   if (!isAdmin) return;
-
   if (!confirm("¿Seguro que deseas eliminar esta canción?")) return;
-
   songs = songs.filter(song => song.id !== id);
   favorites = favorites.filter(item => item !== id);
-
   saveData();
   renderSongs();
   renderAdminSongs();
@@ -690,35 +576,27 @@ function deleteSong(id) {
 
 function renderAdminSongs() {
   if (!isAdmin) return;
-
   const list = document.getElementById("adminSongList");
   list.innerHTML = "";
-
   if (songs.length === 0) {
     list.textContent = "Todavía no has agregado canciones.";
     return;
   }
-
   songs.forEach(song => {
     const item = document.createElement("div");
     item.className = "admin-song";
-
     const name = document.createElement("strong");
     name.textContent = song.title;
-
     const category = document.createElement("p");
     category.textContent = song.category;
-
     const edit = document.createElement("button");
     edit.className = "secondary";
     edit.textContent = "✏️ Editar";
     edit.onclick = () => editSong(song.id);
-
     const remove = document.createElement("button");
     remove.className = "danger";
     remove.textContent = "🗑 Eliminar";
     remove.onclick = () => deleteSong(song.id);
-
     item.append(name, category, edit, remove);
     list.appendChild(item);
   });
@@ -727,7 +605,6 @@ function renderAdminSongs() {
 function resetForm() {
   editingId = null;
   document.getElementById("songForm").reset();
-
   document.getElementById("saveButton").textContent =
     "Guardar canción";
 }
@@ -740,7 +617,15 @@ function logout() {
 }
 
 renderSongs();
+</script>
 
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .catch(error => console.error("Error al registrar el Service Worker:", error));
+  });
+}
 </script>
 </body>
 </html>
