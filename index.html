@@ -1,5 +1,4 @@
-
-
+ 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,30 +14,30 @@
 
 <style>
 :root {
-  --blue: #123d70;
-  --blue2: #1d568e;
-  --gold: #d7a83d;
-  --cream: #faf7ef;
-  --white: #ffffff;
-  --text: #24364b;
-  --muted: #778397;
+  --blue:#123d70;
+  --blue2:#1d568e;
+  --gold:#d7a83d;
+  --cream:#faf7ef;
+  --white:#ffffff;
+  --text:#24364b;
+  --muted:#778397;
 }
-* { box-sizing: border-box; }
+* {box-sizing:border-box;}
 body {
-  margin: 0;
-  background: var(--cream);
-  color: var(--text);
-  font-family: 'Fredoka', sans-serif;
+  margin:0;
+  background:var(--cream);
+  color:var(--text);
+  font-family:'Fredoka',sans-serif;
 }
 header {
-  background: linear-gradient(135deg,#10345f,#205a91);
-  color: white;
-  padding: 25px 18px 28px;
-  border-radius: 0 0 25px 25px;
-  box-shadow: 0 5px 18px #102e5020;
+  background:linear-gradient(135deg,#10345f,#205a91);
+  color:white;
+  padding:25px 18px 28px;
+  border-radius:0 0 25px 25px;
+  box-shadow:0 5px 18px #102e5020;
 }
-.header-content { max-width: 800px; margin: auto; }
-.brand { display:flex; align-items:center; gap:15px; }
+.header-content {max-width:800px;margin:auto;}
+.brand {display:flex;align-items:center;gap:15px;}
 .logo {
   width:105px;
   height:76px;
@@ -51,7 +50,7 @@ header {
   font-weight:700;
   line-height:1.1;
 }
-.brand h1 span { color:#f2c75e; }
+.brand h1 span {color:#f2c75e;}
 .motto {
   font-family:'Caveat',cursive;
   font-size:clamp(25px,5vw,34px);
@@ -82,7 +81,7 @@ main {
   outline:none;
   margin-bottom:18px;
 }
-.search:focus { border-color:var(--gold); }
+.search:focus {border-color:var(--gold);}
 .tabs {
   display:flex;
   gap:8px;
@@ -131,9 +130,9 @@ main {
   font-size:21px;
   flex-shrink:0;
 }
-.song-info { flex:1; min-width:0; cursor:pointer; }
-.song-info h3 { margin:0 0 5px; font-size:17px; }
-.song-info p { margin:0; color:var(--muted); font-size:13px; }
+.song-info {flex:1;min-width:0;cursor:pointer;}
+.song-info h3 {margin:0 0 5px;font-size:17px;}
+.song-info p {margin:0;color:var(--muted);font-size:13px;}
 .heart {
   border:none;
   background:none;
@@ -141,13 +140,13 @@ main {
   cursor:pointer;
   color:#b5b5b5;
 }
-.heart.favorite { color:#e34c65; }
+.heart.favorite {color:#e34c65;}
 .empty {
   text-align:center;
   padding:35px 10px;
   color:var(--muted);
 }
-button { font-family:inherit; }
+button {font-family:inherit;}
 .admin-button {
   background:#f0c766;
   color:#17385d;
@@ -166,7 +165,7 @@ button { font-family:inherit; }
   display:none;
   border:1px solid #eee5d3;
 }
-.admin-area h2 { color:var(--blue); }
+.admin-area h2 {color:var(--blue);}
 .field {
   width:100%;
   padding:12px;
@@ -176,7 +175,7 @@ button { font-family:inherit; }
   font-family:inherit;
   font-size:15px;
 }
-textarea.field { min-height:180px; resize:vertical; }
+textarea.field {min-height:180px;resize:vertical;}
 .primary {
   background:var(--blue);
   color:white;
@@ -206,7 +205,7 @@ textarea.field { min-height:180px; resize:vertical; }
   border-top:1px solid #eee;
   padding:12px 0;
 }
-.admin-song button { margin:5px 4px 0 0; }
+.admin-song button {margin:5px 4px 0 0;}
 .detail {
   display:none;
   background:white;
@@ -215,8 +214,8 @@ textarea.field { min-height:180px; resize:vertical; }
   margin-top:18px;
   box-shadow:0 3px 15px #0000000a;
 }
-.detail h2 { color:var(--blue); font-size:25px; }
-.detail-category { color:#ae842e; font-weight:600; }
+.detail h2 {color:var(--blue);font-size:25px;}
+.detail-category {color:#ae842e;font-weight:600;}
 .lyrics {
   white-space:pre-wrap;
   line-height:1.9;
@@ -242,9 +241,13 @@ footer {
   color:var(--muted);
   margin:5px 0 15px;
 }
+button:disabled {
+  opacity:.6;
+  cursor:not-allowed;
+}
 @media(max-width:450px) {
-  .logo { width:62px; height:62px; }
-  .brand { gap:10px; }
+  .logo {width:62px;height:62px;}
+  .brand {gap:10px;}
 }
 </style>
 </head>
@@ -307,8 +310,8 @@ footer {
 
   <section class="admin-area" id="adminArea">
     <h2>Panel de administrador</h2>
-    <p>Agrega, modifica o elimina tus canciones locales.</p>
-    <p><small>Las canciones que agregues aquí se guardan únicamente en este navegador.</small></p>
+    <p>Agrega, modifica o elimina canciones de la biblioteca compartida.</p>
+    <p><small>Las canciones que publiques se guardarán en la nube y estarán disponibles para todos.</small></p>
 
     <form id="songForm">
       <label>Título de la canción</label>
@@ -335,7 +338,7 @@ footer {
       </button>
     </form>
 
-    <h3>Mis canciones</h3>
+    <h3>Canciones de la biblioteca</h3>
     <div id="adminSongList"></div>
 
     <button class="danger" onclick="logout()">
@@ -350,16 +353,17 @@ footer {
 </footer>
 
 <script>
-const ADMIN_PASSWORD = "Admi1509";
-
 let songs = [];
+
 let localSongs = JSON.parse(
   localStorage.getItem("mision_songs") || "[]"
 );
+
 let favorites = JSON.parse(
   localStorage.getItem("mision_favorites") || "[]"
 );
 
+let firebaseSongs = [];
 let currentTab = "Todos";
 let editingId = null;
 let currentSongId = null;
@@ -404,8 +408,7 @@ function renderSongs() {
         ? favorites.includes(String(song.id))
         : song.category === currentTab);
 
-    const matchesSearch =
-      song.title.toLowerCase().includes(query);
+    const matchesSearch = song.title.toLowerCase().includes(query);
 
     return matchesCategory && matchesSearch;
   });
@@ -503,33 +506,51 @@ function updateDetailFavorite() {
 }
 
 function toggleCurrentFavorite() {
-  if (currentSongId === null) return;
-  toggleFavorite(currentSongId);
+  if (currentSongId !== null) {
+    toggleFavorite(currentSongId);
+  }
 }
 
-function adminAccess() {
+async function adminAccess() {
   if (isAdmin) {
     document.getElementById("adminArea").style.display = "block";
+    renderAdminSongs();
     return;
   }
 
-  const password = prompt("Ingresa la contraseña de administrador:");
-  if (password === null) return;
+  const email = prompt("Correo electrónico del administrador:");
+  if (!email) return;
 
-  if (password === ADMIN_PASSWORD) {
+  const password = prompt("Contraseña de tu cuenta Firebase:");
+  if (!password) return;
+
+  try {
+    const user = await window.firebaseAdminLogin(email, password);
+
+    if (!user || user.uid !== window.firebaseAdminUID) {
+      await window.firebaseAdminLogout();
+      alert("Esta cuenta no tiene autorización de administrador.");
+      return;
+    }
+
     isAdmin = true;
     document.getElementById("adminArea").style.display = "block";
     renderAdminSongs();
+
     alert("¡Bienvenido al modo administrador!");
-  } else {
-    alert("Contraseña incorrecta.");
+  } catch (error) {
+    console.error(error);
+    alert("No se pudo iniciar sesión. Verifica tu correo y contraseña.");
   }
 }
 
-document.getElementById("songForm").addEventListener("submit", function(event) {
+document.getElementById("songForm").addEventListener("submit", async function(event) {
   event.preventDefault();
 
-  if (!isAdmin) return;
+  if (!isAdmin) {
+    alert("Debes iniciar sesión como administrador.");
+    return;
+  }
 
   const title = document.getElementById("songTitle").value.trim();
   const category = document.getElementById("songCategory").value;
@@ -540,48 +561,66 @@ document.getElementById("songForm").addEventListener("submit", function(event) {
     return;
   }
 
-  if (editingId !== null) {
-    const index = localSongs.findIndex(
-      song => String(song.id) === String(editingId)
-    );
+  const button = document.getElementById("saveButton");
+  button.disabled = true;
+  button.textContent = "Guardando...";
 
-    if (index !== -1) {
-      localSongs[index] = {
-        ...localSongs[index],
-        title,
-        category,
-        lyrics
-      };
+  try {
+    if (editingId !== null) {
+      if (String(editingId).startsWith("firebase_")) {
+        const docId = String(editingId).replace("firebase_", "");
+
+        await window.firebaseUpdateSong(docId, {
+          titulo: title,
+          categoria: category,
+          letra: lyrics
+        });
+      } else {
+        const index = localSongs.findIndex(
+          song => String(song.id) === String(editingId)
+        );
+
+        if (index !== -1) {
+          localSongs[index] = {
+            ...localSongs[index],
+            title,
+            category,
+            lyrics
+          };
+        }
+      }
+    } else {
+      await window.firebaseAddSong({
+        titulo: title,
+        categoria: category,
+        letra: lyrics
+      });
     }
-  } else {
-    localSongs.push({
-      id: "local_" + Date.now(),
-      title,
-      category,
-      lyrics
-    });
+
+    await window.reloadFirebaseSongs();
+
+    saveLocalData();
+    resetForm();
+    renderSongs();
+    renderAdminSongs();
+
+    alert("¡Canción guardada correctamente en la biblioteca!");
+  } catch (error) {
+    console.error(error);
+    alert("No se pudo guardar. Verifica la conexión y los permisos de Firebase.");
+  } finally {
+    button.disabled = false;
+    button.textContent = editingId !== null
+      ? "Actualizar canción"
+      : "Guardar canción";
   }
-
-  refreshCombinedSongs();
-  saveLocalData();
-  resetForm();
-  renderSongs();
-  renderAdminSongs();
-
-  alert("Canción guardada en este dispositivo.");
 });
 
 function editSong(id) {
   if (!isAdmin) return;
 
-  const song = localSongs.find(
-    item => String(item.id) === String(id)
-  );
-
-  if (!song) {
-    alert("Las canciones de Firebase no se editan desde este panel.");
-    return;
-  }
+  const song = songs.find(item => String(item.id) === String(id));
+  if (!song) return;
 
   editingId = id;
 
@@ -597,31 +636,38 @@ function editSong(id) {
   });
 }
 
-function deleteSong(id) {
+async function deleteSong(id) {
   if (!isAdmin) return;
 
-  const song = localSongs.find(
-    item => String(item.id) === String(id)
-  );
-
-  if (!song) {
-    alert("Las canciones de Firebase no se eliminan desde este panel.");
-    return;
-  }
+  const song = songs.find(item => String(item.id) === String(id));
+  if (!song) return;
 
   if (!confirm("¿Seguro que deseas eliminar esta canción?")) return;
 
-  localSongs = localSongs.filter(
-    item => String(item.id) !== String(id)
-  );
+  try {
+    if (String(id).startsWith("firebase_")) {
+      const docId = String(id).replace("firebase_", "");
+      await window.firebaseDeleteSong(docId);
+    } else {
+      localSongs = localSongs.filter(
+        item => String(item.id) !== String(id)
+      );
+    }
 
-  favorites = favorites.filter(item => item !== String(id));
+    favorites = favorites.filter(item => item !== String(id));
 
-  refreshCombinedSongs();
-  saveLocalData();
-  renderSongs();
-  renderAdminSongs();
-  resetForm();
+    await window.reloadFirebaseSongs();
+
+    saveLocalData();
+    renderSongs();
+    renderAdminSongs();
+    resetForm();
+
+    alert("Canción eliminada.");
+  } catch (error) {
+    console.error(error);
+    alert("No se pudo eliminar la canción.");
+  }
 }
 
 function renderAdminSongs() {
@@ -630,12 +676,14 @@ function renderAdminSongs() {
   const list = document.getElementById("adminSongList");
   list.innerHTML = "";
 
-  if (localSongs.length === 0) {
-    list.textContent = "Todavía no has agregado canciones locales.";
+  const allAdminSongs = [...firebaseSongs, ...localSongs];
+
+  if (allAdminSongs.length === 0) {
+    list.textContent = "Todavía no has agregado canciones.";
     return;
   }
 
-  localSongs.forEach(song => {
+  allAdminSongs.forEach(song => {
     const item = document.createElement("div");
     item.className = "admin-song";
 
@@ -643,7 +691,8 @@ function renderAdminSongs() {
     name.textContent = song.title;
 
     const category = document.createElement("p");
-    category.textContent = song.category;
+    category.textContent = song.category +
+      (song.source === "firebase" ? " · Nube" : " · Local");
 
     const edit = document.createElement("button");
     edit.className = "secondary";
@@ -666,10 +715,17 @@ function resetForm() {
   document.getElementById("saveButton").textContent = "Guardar canción";
 }
 
-function logout() {
+async function logout() {
+  try {
+    await window.firebaseAdminLogout();
+  } catch (error) {
+    console.error(error);
+  }
+
   isAdmin = false;
   document.getElementById("adminArea").style.display = "none";
   resetForm();
+
   alert("Sesión de administrador cerrada.");
 }
 
@@ -677,7 +733,12 @@ function refreshCombinedSongs() {
   songs = [...firebaseSongs, ...localSongs];
 }
 
-let firebaseSongs = [];
+window.setFirebaseSongs = function(data) {
+  firebaseSongs = data;
+  refreshCombinedSongs();
+  renderSongs();
+  renderAdminSongs();
+};
 
 renderSongs();
 </script>
@@ -688,8 +749,18 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/13.4.0/firebas
 import {
   getFirestore,
   collection,
-  getDocs
+  getDocs,
+  addDoc,
+  updateDoc,
+  deleteDoc,
+  doc
 } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-firestore.js";
+
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  signOut
+} from "https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCKbh31pKrH-Nb34rVaDgRpt2d1EFSaRyQ",
@@ -700,46 +771,94 @@ const firebaseConfig = {
   appId: "1:77849011852:web:c91c796b9794583ffd3da9"
 };
 
-async function cargarFirebase() {
-  const status = document.getElementById("connectionStatus");
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
 
-  try {
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
+/* UID DEL ADMINISTRADOR */
+window.firebaseAdminUID = "COLOCA_AQUI_TU_UID_REAL";
 
-    const consulta = await getDocs(collection(db, "canciones"));
+/* INICIO DE SESIÓN */
+window.firebaseAdminLogin = async (email, password) => {
+  const result = await signInWithEmailAndPassword(auth, email, password);
+  return result.user;
+};
 
-    firebaseSongs = consulta.docs.map(doc => {
-      const data = doc.data();
+/* CERRAR SESIÓN */
+window.firebaseAdminLogout = async () => {
+  await signOut(auth);
+};
 
-      return {
-        id: "firebase_" + doc.id,
-        title: data.titulo || "Sin título",
-        lyrics: data.letra || "",
-        category: data.categoria || "Animación",
-        author: data.autor || "",
-        source: "firebase"
-      };
-    });
-
-    refreshCombinedSongs();
-    renderSongs();
-
-    status.textContent =
-      "☁️ Conectado · " + firebaseSongs.length + " canciones en la nube";
-
-  } catch (error) {
-    console.error("Firebase:", error);
-
-    status.textContent =
-      "⚠️ No se pudo conectar con Firebase.";
-
-    refreshCombinedSongs();
-    renderSongs();
+/* GUARDAR CANCIÓN */
+window.firebaseAddSong = async (song) => {
+  if (!auth.currentUser || auth.currentUser.uid !== window.firebaseAdminUID) {
+    throw new Error("Usuario no autorizado.");
   }
-}
 
-cargarFirebase();
+  return await addDoc(collection(db, "canciones"), {
+    titulo: song.titulo,
+    categoria: song.categoria,
+    letra: song.letra,
+    autor: "Misión Navidad 2026",
+    fecha: new Date().toISOString()
+  });
+};
+
+/* EDITAR CANCIÓN */
+window.firebaseUpdateSong = async (docId, song) => {
+  if (!auth.currentUser || auth.currentUser.uid !== window.firebaseAdminUID) {
+    throw new Error("Usuario no autorizado.");
+  }
+
+  await updateDoc(doc(db, "canciones", docId), {
+    titulo: song.titulo,
+    categoria: song.categoria,
+    letra: song.letra
+  });
+};
+
+/* ELIMINAR CANCIÓN */
+window.firebaseDeleteSong = async (docId) => {
+  if (!auth.currentUser || auth.currentUser.uid !== window.firebaseAdminUID) {
+    throw new Error("Usuario no autorizado.");
+  }
+
+  await deleteDoc(doc(db, "canciones", docId));
+};
+
+/* CARGAR CANCIONES */
+window.reloadFirebaseSongs = async () => {
+  const consulta = await getDocs(collection(db, "canciones"));
+
+  const cloudSongs = consulta.docs.map(documento => {
+    const data = documento.data();
+
+    return {
+      id: "firebase_" + documento.id,
+      title: data.titulo || "Sin título",
+      lyrics: data.letra || "",
+      category: data.categoria || "Animación",
+      author: data.autor || "",
+      source: "firebase"
+    };
+  });
+
+  window.setFirebaseSongs(cloudSongs);
+
+  const status = document.getElementById("connectionStatus");
+  status.textContent = "☁️ Conectado · " + cloudSongs.length +
+    " canciones en la nube";
+};
+
+/* CONEXIÓN INICIAL */
+try {
+  await window.reloadFirebaseSongs();
+} catch (error) {
+  console.error("Firebase:", error);
+
+  document.getElementById("connectionStatus").textContent =
+    "⚠️ No se pudo conectar con Firebase.";
+}
 </script>
 
 <script>
